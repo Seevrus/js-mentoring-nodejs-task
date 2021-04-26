@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/andrewms2013/js-mentoring-nodejs-task/issues"
   },
-  "homepage": "https://github.com/andrewms2013/js-mentoring-nodejs-task#readme"
+  "homepage": "https://github.com/andrewms2013/js-mentoring-nodejs-task#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0"
+  }
 }

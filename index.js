@@ -1,5 +1,12 @@
-const fs = require('fs');
+import pathReader from './src/pathReader.js';
+import printFolder from './src/printFolder.js';
+import writeOutput from './src/output.js';
 
-process.stdin.on('data', (chunk) => {
-    console.log(chunk.toString('utf-8'));
-})
+// module for file reader
+let path = pathReader();
+
+// module for interface
+let ans = printFolder(path, 1);
+
+// module for output
+writeOutput(ans);
