@@ -17,9 +17,7 @@
     "url": "https://github.com/andrewms2013/js-mentoring-nodejs-task/issues"
   },
   "homepage": "https://github.com/andrewms2013/js-mentoring-nodejs-task#readme",
-  "dependencies": {
-    "prompt-sync": "^4.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^7.25.0"
   }

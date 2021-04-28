@@ -1,12 +1,13 @@
-import pathReader from './src/pathReader.js';
 import printFolder from './src/printFolder.js';
 import writeOutput from './src/output.js';
 
-// module for file reader
-let path = pathReader();
+console.log('Enter a valid folder path (relative or absolute)');
+process.stdin.on('data', (chunk) => {
+  let path = chunk.toString('utf-8').trim();
 
-// module for interface
-let ans = printFolder(path, 1);
+  let ans = printFolder(path, 1);
 
-// module for output
-writeOutput(ans);
+  writeOutput(ans);
+
+  process.exit();
+})
